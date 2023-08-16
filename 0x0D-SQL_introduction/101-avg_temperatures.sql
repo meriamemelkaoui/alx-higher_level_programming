@@ -1,3 +1,3 @@
--- inserts a new row in the table first_table
+--  displays the average temperature
 
-SELECT COUNT(id) FROM first_table WHERE id = 89
+SELECT city ,AVG(value) as avg_temp FROM temperatures GROUP BY city ORDER BY avg_temp DESC
